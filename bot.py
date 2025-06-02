@@ -18,8 +18,22 @@ WELCOME_MSG = """
 """
 
 @bot.on_message(filters.command("start"))
+@bot.on_message(filters.command("start"))
 async def start(client, message):
-    await message.reply_text(WELCOME_MSG)
+    await message.reply_photo(
+        photo="https://raw.githubusercontent.com/Bima2006/BiMaa-T.V.01/main/assets/bimaa_logo.png",
+        caption="""
+👑 *Welcome to BiMaa-T.V.01* 🎵📽️
+
+🖼️ Powered by BIMSARA
+
+📥 Simply send a YouTube, TikTok, or Instagram video link and I’ll give you download options in MP3 or MP4 format.
+
+🚀 Let’s get downloading!
+        """,
+        parse_mode="markdown"
+    )
+
 
 @bot.on_message(filters.text & filters.private)
 async def download_video(client, message):

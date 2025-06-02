@@ -21,7 +21,7 @@ WELCOME_MSG = """
 @bot.on_message(filters.command("start"))
 async def start(client, message):
     await message.reply_photo(
-        photo="https://raw.githubusercontent.com/Bima2006/BiMaa-T.V.01/main/assets/bimaa_logo.png",
+        photo="https://github.com/Bima2006/BiMaa-T.V.01/blob/main/image_2025-06-02_091653343.png",
         caption="""
 👑 *Welcome to BiMaa-T.V.01* 🎵📽️
 
